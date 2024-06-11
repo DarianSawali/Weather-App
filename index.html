@@ -81,9 +81,9 @@
             }
         }
 
-        
-
         searchBtn.addEventListener("click", () => {checkWeather(searchBox.value);})
+
+        searchBox.addEventListener("keypress", () => {if(event.key === "Enter") checkWeather(searchBox.value);})
 
 
         // checkWeather(jakarta);
